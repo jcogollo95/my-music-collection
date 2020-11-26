@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "1da54b20-989c-4df0-b305-6047fe1fd785",
+		"name": "Share_code",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST estudiantes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"type": "text"
+						},
+						{
+							"key": "nombre2",
+							"value": "Alberto",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Coronado",
+							"type": "text"
+						},
+						{
+							"key": "apellido2",
+							"value": "Torreglosa",
+							"type": "text"
+						},
+						{
+							"key": "edad",
+							"value": "19",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/estudiante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET estudiantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/estudiantes",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"estudiantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9000/estudiante/5d8d5919ee892909c3ceb2c7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"estudiante",
+						"5d8d5919ee892909c3ceb2c7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Estudiante",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Paula",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/estudiante/5d8d58f5ee892909c3ceb2c6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"estudiante",
+						"5d8d58f5ee892909c3ceb2c6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Estudiante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9000/estudiante/5d8d5919ee892909c3ceb2c7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"estudiante",
+						"5d8d5919ee892909c3ceb2c7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
